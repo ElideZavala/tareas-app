@@ -1,5 +1,5 @@
 ## App de Tareas 
 
 ### Pantalla principal
-![image]( C:\Users\Hp\Desktop\Node\app-tareas-por-hacer\images)
+![image]( ./images/2021-04-09_17h11_39.jpg)
 
