@@ -142,21 +142,20 @@ const mostrarListadoChecklist = async( tareas = [] ) => {
           return {
                value: tarea.id,
                name: `${ idx } ${ tarea.desc }`,
-               checked: ( tarea.completadoEn ) ? true : false
-           }
+               checked: true
+          }
      });
 
      const pregunta = [
           {
                type: 'checkbox',
                name: 'ids',
-               pageSize: 15,
                message: 'Selecciones',
                choices
           }
      ]
      
-     const { ids } = await inquirer.prompt(pregunta);
+     const { ids } = await inquirer.prompt(preguntas);
 
      return ids;
 }

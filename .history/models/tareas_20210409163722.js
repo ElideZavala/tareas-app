@@ -103,9 +103,7 @@ class Tareas {
           this.listadoArr.forEach( tarea => {
 
                // Verificar si en el arreglo id existe o incluye la tarea.id
-               if( !ids.includes(tarea.id) ){
-                    this._listado[tarea.id].completadoEn = null;
-               }
+               if( ids.includes(tarea.id) );
           })
      }
 }

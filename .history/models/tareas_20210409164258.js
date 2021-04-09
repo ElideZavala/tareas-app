@@ -104,7 +104,7 @@ class Tareas {
 
                // Verificar si en el arreglo id existe o incluye la tarea.id
                if( !ids.includes(tarea.id) ){
-                    this._listado[tarea.id].completadoEn = null;
+                    this._listado[id].completadoEn = null;
                }
           })
      }

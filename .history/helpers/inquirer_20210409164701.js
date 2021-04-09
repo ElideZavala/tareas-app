@@ -150,7 +150,7 @@ const mostrarListadoChecklist = async( tareas = [] ) => {
           {
                type: 'checkbox',
                name: 'ids',
-               pageSize: 15,
+               pageSize: 10,
                message: 'Selecciones',
                choices
           }

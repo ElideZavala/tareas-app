@@ -142,7 +142,7 @@ const mostrarListadoChecklist = async( tareas = [] ) => {
           return {
                value: tarea.id,
                name: `${ idx } ${ tarea.desc }`,
-               checked: ( tarea.completadoEn ) ? true : false
+               checked: ( tarea.completadaEn ) ? true : false
            }
      });
 
@@ -150,7 +150,6 @@ const mostrarListadoChecklist = async( tareas = [] ) => {
           {
                type: 'checkbox',
                name: 'ids',
-               pageSize: 15,
                message: 'Selecciones',
                choices
           }

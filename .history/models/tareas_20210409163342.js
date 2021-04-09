@@ -93,18 +93,10 @@ class Tareas {
      toggleCompletadas( ids = [] ) {
           
           ids.forEach( id => {
+
                const tarea =  this._listado[id];
                if ( !tarea.completadoEn ) {
                     tarea.completadoEn = new Date().toISOString()  // <== Genera la fecha completamente
-               }
-
-          });
-          
-          this.listadoArr.forEach( tarea => {
-
-               // Verificar si en el arreglo id existe o incluye la tarea.id
-               if( !ids.includes(tarea.id) ){
-                    this._listado[tarea.id].completadoEn = null;
                }
           })
      }
